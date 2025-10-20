@@ -1,14 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Accueil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Soul - Communauté Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>
-	Bienvenue
-</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="img/logo.png" alt="Lost Soul Logo" class="logo-img">
+                <h1>Lost Soul</h1>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <span id="themeIcon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="img/logo.png" alt="Lost Soul Logo" class="hero-logo">
+            <h1 class="hero-title">Bienvenue chez Lost Soul</h1>
+            <p class="hero-subtitle">Rejoignez notre communauté gaming dynamique ! Jouez ensemble, créez des souvenirs et explorez des mondes virtuels fascinants 🎮</p>
+            <div class="hero-buttons">
+                <a href="https://discord.gg/BcTQXN3fDp" target="_blank" class="btn btn-primary">Rejoindre Discord</a>
+                <button class="btn btn-secondary" id="statsBtn">Voir nos Stats</button>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section class="games">
+            <h2>Nos Jeux</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-icon">🧱</div>
+                    <h3>Minecraft</h3>
+                    <p>Construisez et explorez dans nos serveurs Minecraft privatisés</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">⚔️</div>
+                    <h3>Roblox</h3>
+                    <p>Découvrez des jeux créés par la communauté sur Roblox</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🌊</div>
+                    <h3>Rucoy Online</h3>
+                    <p>Aventure MMO classique avec nos joueurs</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">✨</div>
+                    <h3>Starblast</h3>
+                    <p>Combats spatiaux intenses et compétitifs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Stats Section -->
+        <section class="discord-stats">
+            <h2>Notre Communauté Discord</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-emoji">🟢</div>
+                    <div class="stat-value" id="onlineCount">-</div>
+                    <div class="stat-label">En ligne</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-emoji">🎮</div>
+                    <div class="stat-value" id="playingCount">-</div>
+                    <div class="stat-label">En train de jouer</div>
+                </div>
+            </div>
+            <div class="discord-info">
+                <p>Serveur ID: <code>845597267935494144</code></p>
+                <p>Invite: <code>https://discord.gg/BcTQXN3fDp</code></p>
+            </div>
+        </section>
+
+        <!-- Community Features -->
+        <section class="features">
+            <h2>Pourquoi nous rejoindre ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">1</div>
+                    <h3>Communauté Accueillante</h3>
+                    <p>Des joueurs de tous les niveaux, toujours prêts à s'entraider</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">2</div>
+                    <h3>Événements Réguliers</h3>
+                    <p>Tournois, défis et événements spéciaux chaque semaine</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">3</div>
+                    <h3>Jeux Variés</h3>
+                    <p>4 jeux différents pour tous les goûts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">4</div>
+                    <h3>Staff réactif</h3>
+                    <p>Une équipe présente et à l’écoute</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Prêt à jouer avec nous ?</h2>
+            <p>Rejoignez des milliers de joueurs passionnés</p>
+            <a href="https://discord.gg/BcTQXN3fDp" target="_blank" class="btn btn-cta">Nous Rejoindre sur Discord</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Lost Soul - Communauté Gaming</p>
+        <p>Créé avec ❤️ pour les gamers 🎮</p>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
